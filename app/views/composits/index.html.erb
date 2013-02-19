@@ -1,0 +1,7 @@
+<h1>Composits#index</h1>
+<p>Find me in app/views/composits/index.html.erb</p>
+
+<%=form_tag({ :controller => 'composits', :action => 'compose' }, :multipart => true) do %>
+  <%= file_field_tag :upfile %>
+  <%= submit_tag %>
+<% end %>
